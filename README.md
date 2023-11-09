@@ -23,6 +23,17 @@ pip install -r requirements.txt
 python train.py
 ```
 
+### Pretrained Model
+- [beomi/llama-2-ko-7b](https://huggingface.co/beomi/llama-2-ko-7b)
+    - 성능 안나옴
+- [hyunseoki/ko-en-llama2-13b](https://huggingface.co/hyunseoki/ko-en-llama2-13b)
+    - 성능 안나옴
+- [beomi/llama-2-koen-13b](https://huggingface.co/beomi/llama-2-koen-13b)
+    - 학습 예정
+- [beomi/llama-2-ko-70b](https://huggingface.co/beomi/llama-2-ko-70b)
+    - A6000 (48GB), 1 batch => OOM
+
+
 ## Inference
 ```bash
 python inference.py
@@ -31,6 +42,9 @@ python inference.py
 ## Performance
 ![Performance Example](Performance.png)
 
+- Column, Table명 튜닝이 안됨
+- `AND`, `OR`, `LIKE`, 부등호 문법 오류 발생
+
 ## Reference
 - [Llama 2 Fine-Tune with QLoRA](https://youtu.be/eeM6V5aPjhk?si=f_9LM0JmDTe2jlx1)
-
+- [RYANSQL](https://github.com/kakaoenterprise/RYANSQL)
